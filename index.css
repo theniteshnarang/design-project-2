@@ -38,4 +38,9 @@ body{
     .right-banner{
         width: 100%; 
     }
+    .left-home{
+        width: 100%;
+        padding-bottom: 0;
+    }
+
 }

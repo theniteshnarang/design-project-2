@@ -79,6 +79,14 @@ body{
         transform: translate(-60%,-115%);
     }
 }
+@media(max-width:420px){
+   .left-product .btn{
+       align-self: center;
+   }
+   .circles{
+    transform: translate(-60%,210%);
+    }
+}
 
 @media(max-width:320px){
     .circles{

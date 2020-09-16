@@ -80,11 +80,12 @@ body{
     margin: 30px 0;
 }
 
-.cta-btn button{
+.cta-btn a{
     padding: 10px 20px;
     margin: 20px 15px 20px 0;
     font-size: 20px;
     border: none;
+    text-decoration: none;
 }
 
 .shop-now{
@@ -150,14 +151,20 @@ body{
     .circles{
         transform: translate(-60%,-200%);
     }
-    .title{
+    /* .title{
         font-size: 1.5rem;
     }
     .sub-title, .price{
         font-size: 0.8rem;
-    }
-    .cta-btn button, .shop-now{
+    } */
+    .cta-btn a, .shop-now{
         font-size: 0.7rem;
         padding: 7px 16px;
+    }
+    .main-nav{
+        width: 100%;
+    }
+    .main-nav .nav{
+        justify-content: space-between;
     }
 }
