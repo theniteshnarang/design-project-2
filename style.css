@@ -1,0 +1,163 @@
+*, *::before, *::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    font-family: 'Russo One', sans-serif;
+    font-weight: 400;
+    color: #000000;
+}
+
+.container{
+    width: 75vw;
+    max-width: 75vw;
+    margin: 0 auto;
+}
+
+.flex-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.main-header{
+    height: 70px;
+}
+
+.brand-logo{
+    color: #378782;
+    font-size: 27px;
+    font-weight: 300;
+}
+
+.brand-logo{
+    text-decoration: none;
+    cursor: pointer;
+}
+.nav a{
+    margin: 15px;
+    text-decoration: none;
+    color: inherit;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+}
+
+.nav a:hover{
+    color: #87373C;
+}
+
+.nav .contact{
+    border: 1px solid #87373C;
+    border-radius: 5px;
+    padding: 7px 12px;
+    background-color: #87373C;
+    color: black
+}
+
+.nav .contact:hover{
+    background-color: #378782;
+    color: white;
+    border: none;
+}
+.title{
+    color: #5c262a;
+    font-size: 60px;
+    font-weight: normal;
+}
+
+.sub-title{
+    color: #87373C;
+    font-size: 27px;
+    font-weight: normal;
+    margin: 30px 0;
+}
+
+.cta-btn button{
+    padding: 10px 20px;
+    margin: 20px 15px 20px 0;
+    font-size: 20px;
+    border: none;
+}
+
+.shop-now{
+    background-color: #87373C;
+    color: white;
+    font-family: inherit;
+}
+
+.shop-now:hover{
+    background-color: #378782;
+    border: 0.5px solid #87373C;
+}
+
+.cart img{
+    width: 25px;
+}
+
+/* Media Quries for mobile responsive */
+@media(max-width: 900px){
+    .main-product-section, .main-home-section, .main-contact-section{
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .left-product, .left-home{
+        padding: 20px 0;
+        text-align: center;
+    }
+    .title{
+        font-size: 2rem;
+    }
+    .sub-title, .price{
+        font-size: 1rem;
+    }
+    .left-product .btn, .cta-btn{
+        align-self: center;
+    }
+    .circles{
+        bottom:0%;
+        transform: translate(-60%,-310%);
+    }
+}
+
+@media (max-width:600px){
+    .nav a{
+        margin: 5px;
+        font-size: 0.8rem;
+    }
+
+    .nav .contact{
+        padding: 3px 7px;
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width:415px){
+    .main-header{
+        flex-direction: column;
+    }
+    .cart{
+        display: flex;
+        flex-direction: row;
+    }
+    .circles{
+        transform: translate(-60%,-200%);
+    }
+    .title{
+        font-size: 1.5rem;
+    }
+    .sub-title, .price{
+        font-size: 0.8rem;
+    }
+    .cta-btn button, .shop-now{
+        font-size: 0.7rem;
+        padding: 7px 16px;
+    }
+}

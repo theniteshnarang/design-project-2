@@ -1,0 +1,41 @@
+body{
+    background-color: #D6D6D6;
+}
+
+.main-home-section{
+    /* display: flex; */
+    flex-grow: 1;
+    align-self: center;
+}
+
+.right-banner{
+    width: 40%;
+    min-width: 30%;
+}
+
+.left-home{
+    width: 60%;
+    min-width: 40%;
+}
+
+.left-home .cta-btn{
+    justify-content: start;
+ }
+
+.cta-btn .for-more{
+    background-color: #d6d6d6;
+    color: #87373C;
+    border: 1px solid #8593A1;
+}
+
+.for-more:hover{
+    background-color: #87373C;
+    color: #d6d6d6;
+
+}
+
+@media( max-width:415px){
+    .right-banner{
+        width: 100%; 
+    }
+}
