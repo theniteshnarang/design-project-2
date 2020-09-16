@@ -84,13 +84,22 @@ body{
        align-self: center;
    }
    .circles{
-    transform: translate(-60%,210%);
+    transform: translate(-60%,-110%);
+    }
+    .right-product{
+        margin: 0 0 20px 0;
+    }
+}
+@media(max-width:375px){
+    .circles{
+        transform: translate(-60%,250%);
     }
 }
 
+
 @media(max-width:320px){
     .circles{
-        transform: translate(-60%,100%);
+        transform: translate(-60%,700%);
     }
 }
 
