@@ -29,18 +29,18 @@
     </header>
     <section class="main-contact-section flex-row">
         <h1 class="contact-us">Contact Us</h1>
-        <form action="#" class="message-form">
+        <form method="POST" name="contact" data-netlify="true" class="message-form">
             <div class="input-grp">
                 <label for="name">Name:</label>
-                <input type="text" class="name">
+                <input type="text" name="name" id="name" class="name">
             </div>
             <div class="input-grp">
                 <label for="email">Email:</label>
-                <input type="text" class="email">
+                <input type="text" name="email" id="email" class="email">
             </div>
             <div class="input-grp">
                 <label for="Password">Password:</label>
-                <input type="text" class="Password">
+                <input type="text" name="Password" id="Password" class="Password">
             </div>
             <div class="input-grp">
                 <button class="submit btn shop-now">Submit</button>
